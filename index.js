@@ -1,19 +1,11 @@
-let random = Math.random();
-let a= prompt("Enter First:")
-let b= prompt("Enter Second:")
-let c= prompt("Enter Operator:")
-let obj =
-{
-    "+": "-",
-    "*": "+",
-    "-":"/",
-    "/":"*"
-}
-if (random>0.1) {
-    console.log(eval(`${a} ${c} ${b}`))
+// Bussiness name Generator
+
+let Adjectives = prompt("Enter Adjective");
+let Shop_Name = prompt("Enter Shop Name");
+let Another_Word = prompt("Enter Another_Word");
+
+function Bussiness_Generator(string1,string2,string3) {
+    console.log(string1.concat(string2,string3));
     
 }
-else{  
-    c=obj[c];
-    console.log(`The result is ${eval(`${a} ${c} ${b}`)}`)
-}
+Bussiness_Generator(Adjectives,Shop_Name,Another_Word);

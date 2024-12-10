@@ -1,0 +1,37 @@
+
+// To add New Array By Array Map Function.
+
+const numb =[ 1,2,3,4];
+const squar= numb.map(num =>
+{
+return num*num;
+}
+);
+console.log(squar);
+
+
+
+// To add New Array By Array Map Function.
+const numb1 =[ 1,2,3,4];
+const sum = numb1.reduce((acc,num) =>
+{
+
+    return acc + num;
+},0
+)
+console.log(sum);
+
+
+
+
+// To Print complete Array By Array Foreach Loop With indexes and full array.
+
+numb1.forEach((element,index) => {
+    console.log(`Element: ${element} at ${index}`);
+    
+});
+
+numb1.forEach((element,index,numb1) => {
+    console.log(`Element: ${element} at ${index} ${numb1}`);
+    
+});

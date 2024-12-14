@@ -1,0 +1,39 @@
+//  CallBack Hell
+
+
+function getCheese(callback)
+{
+    setTimeout(() => {
+        const cheese ="🧀"
+        console.log("Here is ",cheese);
+        callback(cheese);
+    }, 2000);  
+}
+function makedough(cheese,callback)
+{
+    setTimeout(() => {
+        const dough ="🍩"+ cheese;
+        console.log("Here is ",dough);
+        callback(dough);
+    }, 2000);  
+}
+function makePizza(dough,callback)
+{
+    setTimeout(() => {
+        const pizza ="🍕"+ dough;
+        console.log("Here is ",pizza);
+        callback(pizza);
+    }, 2000);  
+}
+getCheese((cheese)=>
+{
+    makedough(cheese,(dough)=>
+    {
+        makePizza(dough,(pizza)=>
+            {
+                console.log("Got the ",pizza);
+            });
+        
+    });
+    
+});

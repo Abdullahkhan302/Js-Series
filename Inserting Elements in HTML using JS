@@ -1,0 +1,5 @@
+// Inserting Elements Using Js
+
+
+let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("afterbegin","<b> I am under the Water </b>");
